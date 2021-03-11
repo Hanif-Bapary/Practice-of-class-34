@@ -1,0 +1,338 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.bg-gray{
+    background-color: #f9fafb;
+}
+/* Begin-Custom-Css */
+.main-header .container-fluid,.slider-section .container-fluid{
+    max-width: 1480px;
+}
+body .btn-primary {
+    padding: 10px 40px;
+    font-size: 18px;
+    background: #e83b3e !important;
+    border-color: #e83b3e;
+    position: relative;
+    z-index: 1;
+}
+body .btn-primary:hover{
+    background-color: #111;
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #111;
+    border-color:#111;
+    z-index: -1;
+    transition: .4s;
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+/* Menu */
+.our-primary-menu{}
+.our-primary-menu li{}
+.our-primary-menu li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+    transition: .4s;
+}
+.our-primary-menu li:hover > a{
+    color: #e83b3e;
+}
+.our-primary-menu li a span {
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+}
+/* Dropdown-menu css */
+.our-primary-menu li{
+    position: relative;
+}
+.our-primary-menu li ul{
+    position: absolute;
+    top: 180%;
+    left: 0;
+    width: 250px;
+    background-color: #fafafa;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1); 
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.our-primary-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 135%;
+}
+.our-primary-menu li ul li{
+    flex-direction: column;
+}
+.our-primary-menu li ul li a{}
+.our-primary-menu li ul li a:hover{
+    letter-spacing: 2px;
+}
+
+.header-info{}
+.header-search {
+    width: 60px;
+    text-align: center;
+    margin-right: 18px;
+    border-right: 1px solid #ddd;
+    font-size: 22px;
+}
+.header-call {
+    width: 210px;
+}
+.header-call-icon {
+    font-size: 28px;
+    color: #e83b3e;
+}
+.header-call-info span {
+    color: #606060;
+    font-size: 18px;
+}
+.header-call-info a {
+    color: #111;
+    font-weight: 500;
+}
+.header-button{}
+
+/* Slider/Banner CSS */
+.slider-section{
+    background: url(./img/main-banner2.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slider-content h6 {
+    color: #e83b3e;
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.slider-content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.slider-content p {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.header-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.header-social ul{
+    list-style: none;
+}
+.header-social ul li{}
+.header-social ul li span{
+    position: relative;
+    margin-right: 40px;
+}
+.header-social ul li span::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    height: 2px;
+    width: 35px;
+    background-color: #111;
+}
+.header-social ul li a {
+    color: #111;
+    padding: 0 15px;
+    font-size: 18px;
+}
+/* Hero-bottom-logo-section */
+.header-bottom-logo{
+    border-bottom: 1px solid #ddd;
+    padding: 60px 0;
+}
+/* About-Us-section */
+.about-image{
+    position: relative;
+}
+.about-img-text {
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    background: url(./img/shape.png) no-repeat center center;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    text-align: center;
+}
+.about-text-inner h2{
+    font-size: 54px;
+    font-weight: 500;
+    color: #e83b3e;
+}
+.about-text-inner p{
+    font-weight: 500;
+}
+.finix-text{}
+.finix-text h2 {
+    font-size: 35px;
+    padding: 20px 0;
+}
+.finix-text h6 {
+    color: #e83b3e;
+    font-weight: 400;
+}
+.finix-text p {
+    color: #606060;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.finix-text strong {
+    font-size: 19px;
+    color: #606060;
+    font-weight: 400;
+}
+.finix-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.finix-text ul li {
+    padding: 5px 0;
+    position: relative;
+}
+.finix-text ul li::before {
+    content: "\f00c";
+    font-family: 'Font awesome 5 Free';
+    font-weight: 600;
+    left: 0px;
+    top: 0;
+    color: #e83b3e;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px;
+}
+/* Why-Chosse_us-Section */
+.why-choose-img{
+    position: relative;
+}
+.animation-btn {
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	background: #fff;
+	color: #e83b3e !important;
+	font-size: 56px;
+	line-height: 80px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 172px;
+	bottom: 54px;
+    transition: .4s;
+}
+.animation-btn:hover{
+    color: #fff !important;
+    background-color: #e73c3e;
+}
+.animation-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(231, 60, 62, .7);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: playbtn 1.6s ease-out infinite;
+}
+@keyframes playbtn{
+    0%,25%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    75%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.feature-item{
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+.feature-item:hover{
+    transform: translateY(-15px);
+}
+.feature-item::before {
+	content: "";
+	position: absolute;
+	top: -140px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #fdebeb;
+	width: 92%;
+	height: 70%;
+	border-radius: 50%;
+}
+.feature-item .ft-icon {
+    color: #e73c3e;
+    font-size: 32px;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    transition: .5s;
+}
+.feature-item:hover .ft-icon{
+    color: #fff;
+    background-color: #e73c3e;
+}
+.mtop{
+    margin-top: -40px;
+}
+.feature-item h4 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+.feature-item p {
+    color: #606060;
+    line-height: 1.6;
+}
